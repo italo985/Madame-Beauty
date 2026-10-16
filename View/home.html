@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madame Beauty - Painel Principal</title>
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/header.css">
+</head>
+<body>
+    <header class="sidebar">
+        <div class="logo">
+            <h2>Madame Beauty</h2>
+        </div>
+        <nav class="menu">
+            <a href="./home.html" class="active">Início</a>
+            <a href="#">Agendamentos</a>
+            <a href="./cliente.html">Clientes</a>
+            <a href="#">Profissionais</a>
+        </nav>
+        <div class="logout">
+            <a href="#" class="btn-sair">Sair do Sistema</a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <header class="top-header">
+            <h1>Olá, Recepcionista</h1>
+        </header>
+
+        <section class="summary-cards">
+            <div class="card">
+                <h3>Atendimentos Hoje</h3>
+                <p class="number">12</p>
+            </div>
+            <div class="card">
+                <h3>Novos Clientes (Mês)</h3>
+                <p class="number">8</p>
+            </div>
+            <div class="card">
+                <h3>Profissionais Cadastrados</h3>
+                <p class="number">3</p>
+            </div>
+        </section>
+
+        <section class="agenda-section">
+            <div class="section-header">
+                <h2>Agenda de Hoje</h2>
+                <button class="btn-novo">+ Novo Agendamento</button>
+            </div>
+            
+            <div class="table">
+                <table class="agenda-table">
+                    <thead>
+                        <tr>
+                            <th>Horário</th>
+                            <th>Cliente</th>
+                            <th>Procedimento</th>
+                            <th>Profissional</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09:00</td>
+                            <td>Ana Silva</td>
+                            <td>Limpeza de Pele</td>
+                            <td>Dra. Camila</td>
+                            <td><span class="status concluido">Concluído</span></td>
+                        </tr>
+                        <tr>
+                            <td>10:30</td>
+                            <td>Carlos Mendes</td>
+                            <td>Drenagem Linfática</td>
+                            <td>Dra. Fernanda</td>
+                            <td><span class="status andamento">Em andamento</span></td>
+                        </tr>
+                        <tr>
+                            <td>14:00</td>
+                            <td>Beatriz Souza</td>
+                            <td>Bioestimulador</td>
+                            <td>Dr. Roberto</td>
+                            <td><span class="status agendado">Agendado</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

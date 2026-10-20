@@ -1,0 +1,10 @@
+-- UPDATE : ATUALIZANDO O NOME DO PACIENTE JULIANA
+-- NUNCA ESQUECA DO WHERE , SENAO ATUALIZA O BANCO INTEIRO!
+ 
+SET SQL_SAFE_UPDATES = 0;
+
+update clientes
+set nome = 'juliana paes'
+where id_clientes = 1;
+
+SET SQL_SAFE_UPDATES = 1;

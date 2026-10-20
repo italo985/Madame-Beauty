@@ -35,6 +35,8 @@ public class Clientes {
             this.status = status;
         }
 
+    //Getters e Setters
+
     public String getNome() {
         return nome;
     }

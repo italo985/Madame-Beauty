@@ -28,6 +28,8 @@ public class Profissionais {
             this.status = status;
         }
 
+    //Getters e Setters
+
     public long getId() {
         return id;
     }

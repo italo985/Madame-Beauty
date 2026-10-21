@@ -1,9 +1,19 @@
 package com.example.demo.Model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+@Entity
 public class Sessoes {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long idSessao;
     private String tokenHash;
     private LocalDateTime dataCriacao;
     private LocalDateTime ultimaAtividade;
@@ -16,6 +26,15 @@ public class Sessoes {
     }
 
     //Getters e Setters
+
+
+    public long getIdSessao() {
+        return idSessao;
+    }
+
+    public void setIdSessao(long idSessao) {
+        this.idSessao = idSessao;
+    }
 
     public String getTokenHash() {
         return tokenHash;

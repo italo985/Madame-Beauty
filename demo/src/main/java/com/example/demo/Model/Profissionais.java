@@ -1,14 +1,16 @@
 package com.example.demo.Model;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+@Entity
 public class Profissionais {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private long idProfissional;
 
     private String nome;
 
@@ -31,11 +33,11 @@ public class Profissionais {
     //Getters e Setters
 
     public long getId() {
-        return id;
+        return idProfissional;
     }
 
     public void setId(long id) {
-        this.id = id;
+        this.idProfissional = idProfissional;
     }
 
     public String getNome() {

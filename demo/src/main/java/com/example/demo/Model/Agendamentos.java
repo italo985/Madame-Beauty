@@ -1,10 +1,19 @@
 package com.example.demo.Model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jdk.jfr.Enabled;
+
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+@Entity
 public class Agendamentos {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long idAgenda;
     private LocalDate data;
     private LocalTime horaIncio;
     private LocalTime horaFim;
@@ -27,6 +36,14 @@ public class Agendamentos {
     }
 
     //Getters e Setters
+
+    public long getIdAgenda() {
+        return idAgenda;
+    }
+
+    public void setIdAgenda(long idAgenda) {
+        this.idAgenda = idAgenda;
+    }
 
     public LocalDate getData() {
         return data;

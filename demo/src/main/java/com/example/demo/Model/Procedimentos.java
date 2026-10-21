@@ -1,7 +1,16 @@
 package com.example.demo.Model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
 public class Procedimentos {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long idProcedimento;
     private String nome;
     private String descricao;
     private Integer duracao;
@@ -22,6 +31,14 @@ public class Procedimentos {
     }
 
     //Getters e Setters
+
+    public long getIdProcedimento() {
+        return idProcedimento;
+    }
+
+    public void setIdProcedimento(long idProcedimento) {
+        this.idProcedimento = idProcedimento;
+    }
 
     public String getNome() {
         return nome;

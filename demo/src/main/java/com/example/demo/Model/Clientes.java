@@ -10,7 +10,7 @@ public class Clientes {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private long idClientes;
 
     private String nome;
 
@@ -36,6 +36,15 @@ public class Clientes {
         }
 
     //Getters e Setters
+
+
+    public long getIdClientes() {
+        return idClientes;
+    }
+
+    public void setIdClientes(long idClientes) {
+        this.idClientes = idClientes;
+    }
 
     public String getNome() {
         return nome;
